@@ -1,0 +1,433 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornsilk;
+    padding: 20px;
+}
+
+/* Start of NavBar */
+
+header {
+    margin-top: -30px;
+    background: #000000;
+    padding: 0 30px;
+    color: cornsilk;
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+.nav li a i {
+    margin-bottom: 7px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.nav li {
+    list-style: none;
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 30px 15px;
+    text-decoration: none;
+}
+
+.nav {
+    margin: 0px;
+    float: right;
+}
+
+.display-btn, 
+.disappear-btn {
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.3;
+    display: none;
+}
+
+.display-btn {
+    margin:0px;
+    float: right;
+}
+
+.display-btn i {
+    line-height: 100px;
+}
+
+.nav a:hover, .display-btn:hover, .disappear-btn:hover {
+    color: yellow;
+}
+
+#toggle-btn {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+@media screen and (max-width:760px){
+    .display-btn, .disappear-btn {
+        display: block;
+    }
+    .nav {
+        padding: 50px 50px;
+        width: 100%;
+        height: 100vh;
+        transition: 0.5s;
+        background: black;
+        top: -100%;
+        left: 0;
+        position: fixed;
+    }
+
+    .nav li {
+        width: 100%;
+    }
+
+    .nav li a {
+        padding: 15px 15px;
+        text-align: left;
+    }
+
+    .nav li a i {
+        width: auto;
+        font-size: 20px;
+    }
+
+    .disappear-btn {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    #toggle-btn:checked ~ nav .nav {
+        top:0;
+    }
+
+}
+
+.Lemon-logo {
+    padding: 35px 0px;
+    float: left;
+    max-width: 75px;
+    background-color: whitesmoke;
+}
+
+.Lemon-logo img {
+    max-width: 100%;
+    
+}
+
+
+
+/* End of Navbar */
+
+
+
+
+
+/* Start of Index Page Content */
+
+.SideBarNavLeft {
+    float: left;
+    width: 17%;
+    text-align: center;
+    
+}
+
+.SideBarNavLeft h2 {
+    border: 3px solid #fff;
+    background-color: #000000;
+    padding: 9px;
+    margin-top: 1px;
+    display: block;
+    width: 100%;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+
+.intro2 h1 {
+    text-align: center;
+}
+
+.SideBarNavLeft a {
+    border: 3px solid #fff;
+    background-color: #000000;
+    padding: 9px;
+    margin-top: 1px;
+    display: block;
+    width: 100%;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+.mainIndex {
+   float: left;
+   width: 66%;
+   padding: 0 20px;
+}
+
+.SideActivity {
+    overflow: hidden;
+}
+
+.SideBarNavRight {
+    border: 3px solid #fff;
+    background-color: #000000;
+    float: left;
+    width: 17%;
+    padding: 15px;
+    margin-top: 6px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width:600px){
+    .SideBarNavLeft, .mainIndex, .SideBarNavRight {
+        width: 100%;
+    }
+}
+
+.testimonials {
+    border: 3px solid #fff;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #000000;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.testimonials::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.testimonials img {
+    border-radius: 5px;
+    float: left;
+    margin-right: 20px;
+    width: 110px;
+    height: 100px;
+}
+
+.testimonials span {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+@media (max-width:600px) {
+    .testimonials {
+        text-align: center;
+    }
+    .testimonials img {
+        margin:auto;
+        float:none;
+        display: block;
+    }
+}
+
+/* End of Index Page Content */
+
+/* Start of Gallery */
+
+.main2{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.column .content img {
+    width: 100%;
+}
+
+.row {
+    margin: 10px -16px;
+}
+
+.row, 
+.row > .column {
+    padding:4px;
+}
+
+.column{
+    float: left;
+    width: 25%;
+    text-align: center;
+    
+}
+
+.row:after{
+    
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.content {
+    background-color: black;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 900px){
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .column {
+        width: 100%;
+    }
+}
+
+/* End of Gallery */
+
+/* Start of Contact Page */
+
+.top-head {
+    
+    text-align: center;
+    font-size: 100px;
+    padding-top: 75px;
+    
+}
+
+.Lemon-Map{
+    overflow:hidden;
+    padding-bottom:30.25%;
+    height: 100%;
+    width: 100%;
+    height:0;
+}
+
+
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 6px solid #ccc;
+    border-radius: 15px;
+    resize: vertical;
+}
+
+textarea{
+    height: 100px;
+}
+
+.column-25 {
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+}
+
+.column-75 {
+    margin-top: 6px;
+    float: left;
+    width: 75%;
+}
+
+.row3::after{
+    clear:both;
+    display: table;
+    content: "";
+}
+
+@media screen and (max-width: 600px){
+    input[type=submit], .column-25, .column-75{
+        width:100%;
+        margin-top:0;
+    }
+}
+
+fieldset {
+    border: 2px solid rgb(255, 230, 0);
+    border-radius: 25px;
+}
+
+label {
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+}
+
+input[type=submit]{
+    cursor: pointer;
+    float: left;
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    
+}
+
+input[type=submit]:hover{
+    background-color: yellow;
+    color: black;
+}
+/* End of Contact Page */
+
+
+
+
+/* Start of Footer CSS */
+
+footer {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0px;
+    margin-top: 30px;
+    background-color: black;
+}
+
+footer .Socials {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+footer .Socials-button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    margin: 10px;
+    color: black;
+    overflow: hidden;
+    position: relative;
+    border: 1px dotted #fff;
+    border-radius: 50%;
+}
+
+footer .Socials-button i {
+    line-height: 50px;
+    font-size: 22px;
+    transition: 0.2s linear;
+}
+
+
+footer p  {
+    text-align: center;
+    color: cornsilk;
+}
+
+@media (max-width: 570px){
+    footer .Socials-button {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+    footer .Socials-button i {
+        line-height: 40px;
+        font-size: 18px;
+    }
+    }
+
+/* End of Footer CSS */
