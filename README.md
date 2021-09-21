@@ -1,2 +1,2 @@
 # My-Lemon-Website
-My website for CP202
+My Lemon Website
